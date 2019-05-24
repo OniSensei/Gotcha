@@ -31,5 +31,5 @@ _You will have to play with the window size of the discord app, you want it big 
 # Gotcha! Stats #
 ![Gotcha! Stats](https://imgur.com/kdABShB.gif)
 
-# Gotcha! Home#
+# Gotcha! Home #
 ![Gotcha! Home](https://imgur.com/vlSQMUL.gif)
