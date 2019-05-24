@@ -43,7 +43,7 @@ Public Class frmMain
     End Sub
 
     ' Form load
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load pokemon
         If File.Exists(path & "\pkmn.txt") Then
             Dim pokes() As String = File.ReadAllLines(path & "\pkmn.txt")
@@ -98,7 +98,6 @@ Public Class frmMain
 
             ' Load basic settings
             If random = True Then chkbRandom.Checked = True
-            If My.Settings.mnido = True Then chkNidoran.Checked = True
             cbInterval.Text = intC
 
             ' Log
@@ -170,6 +169,8 @@ Public Class frmMain
     Private Sub btnAddString_Click(sender As Object, e As EventArgs) Handles btnAddString.Click
         If txtAddString.Text <> "" Then
             lstChatSpam.Items.Add(txtAddString.Text)
+            lstChatSpam.SelectedIndex = lstChatSpam.Items.Count - 1
+            txtAddString.Text = ""
 
             ' Log
             noticeUpdater("basic", "[INFO] Item added to list...")
@@ -226,11 +227,6 @@ Public Class frmMain
                 My.Settings.random = False
             End If
 
-            If chkNidoran.Checked = True Then
-                My.Settings.mnido = True
-            Else
-                My.Settings.mnido = False
-            End If
             My.Settings.Save()
 
             ' Set variable
@@ -312,9 +308,28 @@ Public Class frmMain
     End Sub
 
     ' Test email
-    Private Sub XylosButton1_Click(sender As Object, e As EventArgs) Handles btnTestEmail.Click
-        ' Sending test email
-        sendEmail("Discord Bot v2 - Email settings test", "This is just a test.")
+    Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTestEmail.Click
+        Try
+            ' Save email settings first
+            My.Settings.email = txtEmail.Text
+            My.Settings.provider = cbEmail.Text
+            My.Settings.port = txtPort.Text
+            My.Settings.smtp = txtHost.Text
+            If chkAltEmail.Checked = True Then
+                My.Settings.altBool = True
+                My.Settings.altEmail = txtAltEmail.Text
+            End If
+            My.Settings.Save()
+
+
+            ' Sending test email
+            sendEmail("Gotcha! - Email settings test", "This is just a test.")
+
+            ' Logs
+            noticeUpdater("advanced", "[INFO] Email sent successfully...")
+        Catch ex As Exception
+            noticeUpdater("advanced", "[ERROR] Couldn't send email, check settings...")
+        End Try
     End Sub
 
     ' Random number generator
@@ -345,7 +360,7 @@ Public Class frmMain
     End Sub
 
     ' Stop bot
-    Private Sub XylosButton1_Click_1(sender As Object, e As EventArgs) Handles btnStopBot.Click
+    Private Sub btnStop_Click_1(sender As Object, e As EventArgs) Handles btnStopBot.Click
         Try
             botTimer.Stop()
             StopWatch.Stop()
@@ -567,9 +582,10 @@ Public Class frmMain
         End If
     End Sub
 
+    ' Pokemon identifier
     Dim pkmn As String = "Bulbasaur"
     Dim checking As Boolean = False
-    Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles pkmnIdentifier.DoWork
+    Private Sub pkmnIdentifier_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles pkmnIdentifier.DoWork
         ' Find pokemon
         CaptureScreen()
 
@@ -581,9 +597,7 @@ Public Class frmMain
                 Dim scImage As Image = CaptureScreen()
                 If lstPkmn.GetItemChecked(i) = True Then
                     Dim pkmnName As String = lstPkmn.Items(i).ToString
-                    If pkmnName = "Nidoran" AndAlso My.Settings.mnido = True Then
-                        pkmnName = "Nidoran_M"
-                    ElseIf pkmnName = "Type: Null" Then
+                    If pkmnName = "Type: Null" Then
                         pkmnName = "TypeNull"
                     End If
                     ' Dynamic images
@@ -771,7 +785,7 @@ Public Class frmMain
         ' Update stats
         Dim elapsed As TimeSpan = Me.StopWatch.Elapsed
         If botRunning = True Then
-            lblElapsed.Text = String.Format("{0}hr {1}min {2}sec", elapsed.TotalHours, elapsed.Minutes, elapsed.Seconds)
+            lblElapsed.Text = String.Format("{0}days {1}hr {2}min {3}sec", elapsed.Days, elapsed.Hours, elapsed.Minutes, elapsed.Seconds)
         End If
 
         Dim spawn As Double = Math.Round(Double.Parse(lblSeen.Text / lblSentMsg.Text * 100))
@@ -799,8 +813,8 @@ Public Class frmMain
             If pkmnNew = "tapu bulu" Then pkmnNew = "tapu-bulu"
             If pkmnNew = "tapu fini" Then pkmnNew = "tapu-fini"
             If pkmnNew = "tapu lele" Then pkmnNew = "tapu-lele"
-            If pkmnNew = "nidoran" AndAlso My.Settings.mnido = False Then pkmnNew = "nidoran-f"
-            If pkmnNew = "nidoran" AndAlso My.Settings.mnido = True Then pkmnNew = "nidoran-m"
+            If pkmnNew = "nidoran" Then pkmnNew = "nidoran-f"
+            If pkmnNew = "nidoran_m" Then pkmnNew = "nidoran-m"
 
             Dim url As String = "https://img.pokemondb.net/sprites/sun-moon/icon/" & pkmnNew.ToLower & ".png"
             Dim tClient As WebClient = New WebClient
@@ -900,8 +914,8 @@ Public Class frmMain
             If pkmnNew = "tapu bulu" Then pkmnNew = "tapu-bulu"
             If pkmnNew = "tapu fini" Then pkmnNew = "tapu-fini"
             If pkmnNew = "tapu lele" Then pkmnNew = "tapu-lele"
-            If pkmnNew = "nidoran" AndAlso My.Settings.mnido = False Then pkmnNew = "nidoran-f"
-            If pkmnNew = "nidoran" AndAlso My.Settings.mnido = True Then pkmnNew = "nidoran-m"
+            If pkmnNew = "nidoran" Then pkmnNew = "nidoran-f"
+            If pkmnNew = "nidoran_m" Then pkmnNew = "nidoran-m"
 
             For i As Integer = 0 To pokemon.Count - 1
                 Dim pkmnid As Integer = i + 1
@@ -982,7 +996,7 @@ Public Class frmMain
 
     ' Github
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Process.Start("https://github.com/Zydratex/Gotcha/")
+        Process.Start("https://zydratex.github.io/Gotcha/")
     End Sub
 
     ' Github issues

@@ -38,9 +38,6 @@
     <Setting Name="provider" Type="System.String" Scope="User">
       <Value Profile="(Default)">@gmail.com</Value>
     </Setting>
-    <Setting Name="mnido" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="channel1" Type="System.String" Scope="User">
       <Value Profile="(Default)">general</Value>
     </Setting>
