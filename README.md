@@ -1,6 +1,9 @@
 # Gotcha
 ### Auto spammer / catcher for discord bot pokecord
 
+# IF YOU NEED TO GET NEW IMAGES FOR POKECORD TO AUTO CATCH THEN USE THE IMAGE SCRAPER HERE:
+>  [Gotcha Image Scraper](https://github.com/Zydratex/Gotcha/releases/tag/ImageScrape)
+
 Gotcha! Is VB.Net application that monitors the users screen and checks for a pokemon spawn/level up. If a pokemon spawn is found then it will automatically attempt to catch the pokemon. Please keep in mind my screen shots of the pokemon might night work for you, in which case you might have to make your own screen shots.
 > I might make a tool to automate this late since you can screen shot the pokemon from the _p!market search --name_ command results
 
@@ -36,7 +39,7 @@ Because it takes over your keyboard, it has to select discord, so before each me
  The bot also saves your output logs to /logs so you can quick search if you need to. 
  
 ## Download Latest version of Gotcha!
->  [v1.0.0.9](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.9)
+>  [v1.0.0.10](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.10)
 
 _Please keep in mind if you use multiple monitors, this only scans your *primary monitor*_
 _You will have to play with the window size of the discord app, you want it big enough for the bot to try more than once if there is no catch, but enough to bump the pokemon off the screen if there is a catch, but not a level. It's tricky but doable, somewhere near 1117 x 647 on my monitor._
