@@ -4,6 +4,12 @@ Imports System.IO
 Imports System.Net
 Imports System.Net.Mail
 
+'  __  __       _       
+' |  \/  |     (_)      
+' | \  / | __ _ _ _ __  
+' | |\/| |/ _` | | '_ \ 
+' | |  | | (_| | | | | |
+' |_|  |_|\__,_|_|_| |_|
 
 Public Class frmMain
     ' Variabls
@@ -630,6 +636,7 @@ Public Class frmMain
         Try
             ' Find discord and send catch
             FindDiscord(channel1)
+            If pkmn = "Nidoran_m" Then pkmn = "Nidoran"
             SendKeys.SendWait("p!catch " & pkmn)
             SendKeys.SendWait("{Enter}")
         Catch ex As Exception
@@ -1009,7 +1016,7 @@ Public Class frmMain
     ' / __ \      (_)    | |     / ____|                                        | |    
     '| |  | |_   _ _  ___| | __ | |     ___  _ __ ___  _ __ ___   __ _ _ __   __| |___ 
     '| |  | | | | | |/ __| |/ / | |    / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|
-    '| |__| | |_| | | (__|   <  | |___| (_) | | | | | | | | | | | (_| | | | | (_| \__ \
+    '| |__| | |_| | | (__|   <  | |___| (_) | | | | | || | (_| | | | | (_| \__ \
     ' \___\_\\__,_|_|\___|_|\_\  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
 
 
@@ -1121,5 +1128,10 @@ Public Class frmMain
         FindDiscord(channel2)
         SendKeys.SendWait("p!pokedex claim all")
         SendKeys.SendWait("{Enter}")
+    End Sub
+
+    ' Image tester
+    Private Sub XylosButton1_Click(sender As Object, e As EventArgs) Handles XylosButton1.Click
+        frmTester.Show()
     End Sub
 End Class

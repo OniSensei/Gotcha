@@ -67,8 +67,8 @@ Partial Class frmMain
         Me.lblMostCaught = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.pbRecent = New System.Windows.Forms.PictureBox()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.pbRecent = New System.Windows.Forms.PictureBox()
         Me.lstRecentCatch = New System.Windows.Forms.ListBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblCatchPerMin = New System.Windows.Forms.Label()
@@ -144,6 +144,7 @@ Partial Class frmMain
         Me.txtAddString = New Gotcha.XylosTextBox()
         Me.lstChatSpam = New System.Windows.Forms.ListBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.XylosButton1 = New Gotcha.XylosButton()
         Me.chkAlolan = New Gotcha.XylosCheckBox()
         Me.chkUltraBeast = New Gotcha.XylosCheckBox()
         Me.chkMythic = New Gotcha.XylosCheckBox()
@@ -467,8 +468,8 @@ Partial Class frmMain
         Me.TabPage6.Controls.Add(Me.lblMostCaught)
         Me.TabPage6.Controls.Add(Me.Label15)
         Me.TabPage6.Controls.Add(Me.Label14)
-        Me.TabPage6.Controls.Add(Me.pbRecent)
         Me.TabPage6.Controls.Add(Me.Label12)
+        Me.TabPage6.Controls.Add(Me.pbRecent)
         Me.TabPage6.Controls.Add(Me.lstRecentCatch)
         Me.TabPage6.Controls.Add(Me.Label7)
         Me.TabPage6.Controls.Add(Me.lblCatchPerMin)
@@ -653,6 +654,15 @@ Partial Class frmMain
         Me.Label14.TabIndex = 36
         Me.Label14.Text = "Most Recent:"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(3, 164)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(91, 15)
+        Me.Label12.TabIndex = 34
+        Me.Label12.Text = "Recent Catches:"
+        '
         'pbRecent
         '
         Me.pbRecent.BackgroundImage = CType(resources.GetObject("pbRecent.BackgroundImage"), System.Drawing.Image)
@@ -663,15 +673,6 @@ Partial Class frmMain
         Me.pbRecent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.pbRecent.TabIndex = 35
         Me.pbRecent.TabStop = False
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(3, 164)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(91, 15)
-        Me.Label12.TabIndex = 34
-        Me.Label12.Text = "Recent Catches:"
         '
         'lstRecentCatch
         '
@@ -1447,6 +1448,7 @@ Partial Class frmMain
         'TabPage5
         '
         Me.TabPage5.BackColor = System.Drawing.Color.White
+        Me.TabPage5.Controls.Add(Me.XylosButton1)
         Me.TabPage5.Controls.Add(Me.chkAlolan)
         Me.TabPage5.Controls.Add(Me.chkUltraBeast)
         Me.TabPage5.Controls.Add(Me.chkMythic)
@@ -1489,6 +1491,15 @@ Partial Class frmMain
         Me.TabPage5.Size = New System.Drawing.Size(599, 422)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Advanced"
+        '
+        'XylosButton1
+        '
+        Me.XylosButton1.EnabledCalc = True
+        Me.XylosButton1.Location = New System.Drawing.Point(414, 365)
+        Me.XylosButton1.Name = "XylosButton1"
+        Me.XylosButton1.Size = New System.Drawing.Size(96, 23)
+        Me.XylosButton1.TabIndex = 35
+        Me.XylosButton1.Text = "Image Tester"
         '
         'chkAlolan
         '
@@ -2256,4 +2267,5 @@ Partial Class frmMain
     Friend WithEvents Label43 As Label
     Friend WithEvents Label42 As Label
     Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents XylosButton1 As XylosButton
 End Class

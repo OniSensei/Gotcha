@@ -22,6 +22,21 @@ Gotcha
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Gotcha.My.Resources.Resources.iconfinder_Cancel_728918">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Gotcha.My.Resources.Resources.iconfinder_Crown_728988">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Gotcha.My.Resources.Resources.iconfinder_Invisible_728947">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Gotcha.My.Resources.Resources.Spr_3r_000">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

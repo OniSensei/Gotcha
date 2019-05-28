@@ -32,9 +32,10 @@ Sandshrew
 Alolan Sandshrew
 Sandslash
 Alolan Sandslash
+Nidoran
 Nidorina
 Nidoqueen
-Nidoran
+Nidoran_m
 Nidorino
 Nidoking
 Clefairy
