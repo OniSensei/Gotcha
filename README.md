@@ -1,7 +1,7 @@
 # Gotcha
 ### Auto spammer / catcher for discord bot pokecord
 
-# IF YOU NEED TO GET NEW IMAGES FOR POKECORD TO AUTO CATCH THEN USE THE IMAGE SCRAPER HERE:
+# IF YOU NEED TO GET NEW IMAGES FOR POKECORD TO AUTO CATCH THEN USE THE IMAGE SCRAPER HERE PLEASE KEEP IN MIND THE COORDINATES PROBABLY WONT WORK FOR YOUR RESOLUTION THOUGH:
 >  [Gotcha Image Scraper](https://github.com/Zydratex/Gotcha/releases/tag/ImageScrape)
 
 Gotcha! Is VB.Net application that monitors the users screen and checks for a pokemon spawn/level up. If a pokemon spawn is found then it will automatically attempt to catch the pokemon. Please keep in mind my screen shots of the pokemon might night work for you, in which case you might have to make your own screen shots.
