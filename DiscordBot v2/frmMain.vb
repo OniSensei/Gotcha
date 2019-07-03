@@ -434,7 +434,7 @@ Public Class frmMain
         SetForegroundWindow(nWnd)
     End Sub
 
-    'Capture screen
+    ' Capture screen
     Public Function CaptureScreen() As Bitmap
         Try
             Dim screenSize = SystemInformation.PrimaryMonitorSize
@@ -932,11 +932,22 @@ Public Class frmMain
                         dexid = String.Format("{00:00}", 0)
                     End If
                     If dexid.Length < 3 Then dexid = "0" & dexid
-                    Dim url As String = "http://pokemon-online.eu/images/pokemon/s-m/animated/" & dexid & ".gif"
-                    Dim tclient As WebClient = New WebClient
-                    Dim timage As Bitmap = Bitmap.FromStream(New IO.MemoryStream(tclient.DownloadData(url)))
+                    Try
+                        If File.Exists(imgPath & "\cache\" & dexid & ".gif") Then
+                            pbRecent.Image = Image.FromFile(imgPath & "\cache\" & dexid & ".gif")
+                        Else
+                            Dim url As String = "http://pokemon-online.eu/images/pokemon/s-m/animated/" & dexid & ".gif"
+                            Dim tclient As WebClient = New WebClient
+                            Dim timage As Bitmap = Bitmap.FromStream(New IO.MemoryStream(tclient.DownloadData(url)))
 
-                    pbRecent.Image = timage
+                            timage.Save(imgPath & "\cache\" & dexid & ".gif")
+                            pbRecent.Image = Image.FromFile(imgPath & "\cache\" & dexid & ".gif")
+                        End If
+                    Catch ex As Exception
+                        Dim tclient As WebClient = New WebClient
+                        Dim timage As Bitmap = Bitmap.FromStream(New IO.MemoryStream(tclient.DownloadData("https://vignette.wikia.nocookie.net/pokemon/images/0/05/Ghost_Lavender_Town_RBY.png")))
+                        pbRecent.Image = timage
+                    End Try
                 End If
             Next
 
@@ -1016,8 +1027,8 @@ Public Class frmMain
     ' / __ \      (_)    | |     / ____|                                        | |    
     '| |  | |_   _ _  ___| | __ | |     ___  _ __ ___  _ __ ___   __ _ _ __   __| |___ 
     '| |  | | | | | |/ __| |/ / | |    / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|
-    '| |__| | |_| | | (__|   <  | |___| (_) | | | | | || | (_| | | | | (_| \__ \
-    ' \___\_\\__,_|_|\___|_|\_\  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
+    '| |__| | |_| | | (__|   <  | |___| (_) | | | | | || |  (_| | | | | (_| \ |_| \ \__
+    ' \___\_\\__,_|_|\___|_|\_\  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|/___|
 
 
     ' Toggle detailed view
