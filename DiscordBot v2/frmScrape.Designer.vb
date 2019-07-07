@@ -61,7 +61,7 @@ Partial Class frmScrape
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(612, 442)
+        Me.TabPage1.Size = New System.Drawing.Size(286, 89)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Tag = "dash"
         Me.TabPage1.Text = "Dashboard"
@@ -163,7 +163,7 @@ Partial Class frmScrape
         Me.MinimizeBox = False
         Me.Name = "frmScrape"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.Text = "Gotcha! - Image Tester"
+        Me.Text = "Gotcha! - Image Scraper"
         Me.XylosTabControl1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
