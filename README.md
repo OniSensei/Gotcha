@@ -101,7 +101,7 @@ _You will have to play with the window size of the discord app, you want it big 
        - Make sure discord and the bulbasaur from before is still visible
         - Hover the mouse in the center of the ear on the left side of the image of bulbasaur
          
-         ![Bulbasaur Ear Example](https://i.imgur.com/3P6DGOE.png)
+         ![Bulbasaur Ear Example](https://i.imgur.com/x0rbZb5.png)
          
          - Press F5 with your mouse still in position. This will update the x and y coordinates in the textboxes on the image scraper form
      - Click 'Invite Bot' button
