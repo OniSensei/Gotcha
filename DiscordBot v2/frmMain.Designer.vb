@@ -144,6 +144,7 @@ Partial Class frmMain
         Me.txtAddString = New Gotcha.XylosTextBox()
         Me.lstChatSpam = New System.Windows.Forms.ListBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.btnScrape = New Gotcha.XylosButton()
         Me.XylosButton1 = New Gotcha.XylosButton()
         Me.chkAlolan = New Gotcha.XylosCheckBox()
         Me.chkUltraBeast = New Gotcha.XylosCheckBox()
@@ -1448,6 +1449,7 @@ Partial Class frmMain
         'TabPage5
         '
         Me.TabPage5.BackColor = System.Drawing.Color.White
+        Me.TabPage5.Controls.Add(Me.btnScrape)
         Me.TabPage5.Controls.Add(Me.XylosButton1)
         Me.TabPage5.Controls.Add(Me.chkAlolan)
         Me.TabPage5.Controls.Add(Me.chkUltraBeast)
@@ -1491,6 +1493,15 @@ Partial Class frmMain
         Me.TabPage5.Size = New System.Drawing.Size(599, 422)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Advanced"
+        '
+        'btnScrape
+        '
+        Me.btnScrape.EnabledCalc = True
+        Me.btnScrape.Location = New System.Drawing.Point(312, 365)
+        Me.btnScrape.Name = "btnScrape"
+        Me.btnScrape.Size = New System.Drawing.Size(96, 23)
+        Me.btnScrape.TabIndex = 36
+        Me.btnScrape.Text = "Image Scrape"
         '
         'XylosButton1
         '
@@ -1940,7 +1951,7 @@ Partial Class frmMain
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Msg"
-        Me.ColumnHeader2.Width = 1200
+        Me.ColumnHeader2.Width = 4000
         '
         'TabPage10
         '
@@ -2268,4 +2279,5 @@ Partial Class frmMain
     Friend WithEvents Label42 As Label
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents XylosButton1 As XylosButton
+    Friend WithEvents btnScrape As XylosButton
 End Class

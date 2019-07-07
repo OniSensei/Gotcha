@@ -1,5 +1,4 @@
 ﻿Imports System.ComponentModel
-Imports System.Drawing.Imaging
 Imports System.IO
 Imports System.Net
 Imports System.Net.Mail
@@ -20,10 +19,10 @@ Public Class frmMain
     Dim intDelay As Integer = My.Settings.catchDelay
     Dim lc As Integer = 0
     Dim ec As Integer = 0
-    Dim levelSeen As Boolean = False
+    Public levelSeen As Boolean = False
     Dim evoSeen As Boolean = False
     Dim caught As Boolean = False
-    Dim startTime As Date
+    Public startTime As Date
     Dim endTime As Date
     Dim botRunning As Boolean = False
     Dim StopWatch As New Diagnostics.Stopwatch
@@ -49,7 +48,7 @@ Public Class frmMain
     End Sub
 
     ' Form load
-    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Async Sub frmMain_LoadAsync(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load pokemon
         If File.Exists(path & "\pkmn.txt") Then
             Dim pokes() As String = File.ReadAllLines(path & "\pkmn.txt")
@@ -164,7 +163,7 @@ Public Class frmMain
     End Sub
 
     ' Log in dev logs
-    Private Sub appendLogs(ByVal datetime As String, ByVal msg As String)
+    Public Sub appendLogs(ByVal datetime As String, ByVal msg As String)
         Dim newItem As New ListViewItem(datetime)
         newItem.SubItems.Add(msg)
 
@@ -246,6 +245,7 @@ Public Class frmMain
             ' Logs
             noticeUpdater("basic", ex.ToString)
             appendLogs(DateTime.Now, ex.ToString)
+            MsgBox(ex.ToString)
         End Try
     End Sub
 
@@ -362,6 +362,7 @@ Public Class frmMain
             appendOutput(DateTime.Now, "[ERROR] Couldn't start bot...")
             noticeUpdater("home", "[ERROR] Couldn't start bot...")
             appendLogs(DateTime.Now, ex.ToString)
+            MsgBox(ex.ToString)
         End Try
     End Sub
 
@@ -390,7 +391,7 @@ Public Class frmMain
     End Sub
 
     ' Log output
-    Private Sub appendOutput(ByVal datetime As String, ByVal msg As String)
+    Public Sub appendOutput(ByVal datetime As String, ByVal msg As String)
         Dim newItem As New ListViewItem(datetime)
         newItem.SubItems.Add(msg)
 
@@ -1144,5 +1145,9 @@ Public Class frmMain
     ' Image tester
     Private Sub XylosButton1_Click(sender As Object, e As EventArgs) Handles XylosButton1.Click
         frmTester.Show()
+    End Sub
+
+    Private Async Sub btnScrape_ClickAsync(sender As Object, e As EventArgs) Handles btnScrape.Click
+        frmScrape.Show()
     End Sub
 End Class

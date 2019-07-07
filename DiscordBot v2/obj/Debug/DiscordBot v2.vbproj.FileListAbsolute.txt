@@ -50,3 +50,4 @@ C:\Users\D\source\repos\DiscordBot v2\DiscordBot v2\bin\Debug\System.Collections
 C:\Users\D\source\repos\DiscordBot v2\DiscordBot v2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\D\source\repos\DiscordBot v2\DiscordBot v2\bin\Debug\System.Interactive.Async.xml
 C:\Users\D\source\repos\DiscordBot v2\DiscordBot v2\obj\Debug\Gotcha.frmTester.resources
+C:\Users\D\source\repos\DiscordBot v2\DiscordBot v2\obj\Debug\Gotcha.frmScrape.resources

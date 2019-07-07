@@ -269,6 +269,30 @@ Namespace My
                 Me("alolan") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property scrapex() As Integer
+            Get
+                Return CType(Me("scrapex"),Integer)
+            End Get
+            Set
+                Me("scrapex") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property scrapey() As Integer
+            Get
+                Return CType(Me("scrapey"),Integer)
+            End Get
+            Set
+                Me("scrapey") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -26,13 +26,13 @@ Partial Class frmTester
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTester))
         Me.XylosTabControl1 = New Gotcha.XylosTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.txtOutput = New System.Windows.Forms.RichTextBox()
         Me.cbPkmn = New Gotcha.XylosCombobox()
         Me.btnTest = New Gotcha.XylosButton()
         Me.pbImg = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.XylosTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.pbImg, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,6 +71,16 @@ Partial Class frmTester
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Tag = "dashboard"
         Me.TabPage1.Text = "Dashboard"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(207, 8)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(19, 20)
+        Me.TextBox1.TabIndex = 5
+        Me.ToolTip1.SetToolTip(Me.TextBox1, resources.GetString("TextBox1.ToolTip"))
+        Me.TextBox1.Visible = False
         '
         'txtOutput
         '
@@ -135,23 +145,16 @@ Partial Class frmTester
         Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.ToolTip1.ToolTipTitle = "About image tester"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(207, 8)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(19, 20)
-        Me.TextBox1.TabIndex = 5
-        Me.ToolTip1.SetToolTip(Me.TextBox1, resources.GetString("TextBox1.ToolTip"))
-        Me.TextBox1.Visible = False
-        '
         'frmTester
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(422, 211)
         Me.Controls.Add(Me.XylosTabControl1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmTester"
         Me.Text = "Gotcha! - Image Tester"
         Me.ToolTip1.SetToolTip(Me, resources.GetString("$this.ToolTip"))

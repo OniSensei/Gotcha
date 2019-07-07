@@ -165,6 +165,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckedListBoxExtensions.vb" />
+    <Compile Include="DiscordScrape.vb" />
+    <Compile Include="frmScrape.Designer.vb">
+      <DependentUpon>frmScrape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScrape.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTester.Designer.vb">
       <DependentUpon>frmTester.vb</DependentUpon>
     </Compile>
@@ -199,6 +206,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmScrape.resx">
+      <DependentUpon>frmScrape.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTester.resx">
       <DependentUpon>frmTester.vb</DependentUpon>
     </EmbeddedResource>
