@@ -197,6 +197,8 @@ Partial Class frmMain
         Me.Label34 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label44 = New System.Windows.Forms.Label()
         Me.mainTab.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -212,6 +214,7 @@ Partial Class frmMain
         Me.TabPage10.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'statsTimer
@@ -264,6 +267,8 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.Controls.Add(Me.Label44)
+        Me.TabPage1.Controls.Add(Me.PictureBox5)
         Me.TabPage1.Controls.Add(Me.LinkLabel3)
         Me.TabPage1.Controls.Add(Me.Label43)
         Me.TabPage1.Controls.Add(Me.Label42)
@@ -2069,6 +2074,25 @@ Partial Class frmMain
         Me.PictureBox3.TabIndex = 0
         Me.PictureBox3.TabStop = False
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(261, 78)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 9
+        Me.PictureBox5.TabStop = False
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(283, 79)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(79, 15)
+        Me.Label44.TabIndex = 10
+        Me.Label44.Text = "DefaulT#2648"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2103,6 +2127,7 @@ Partial Class frmMain
         Me.TabPage10.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2280,4 +2305,6 @@ Partial Class frmMain
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents XylosButton1 As XylosButton
     Friend WithEvents btnScrape As XylosButton
+    Friend WithEvents Label44 As Label
+    Friend WithEvents PictureBox5 As PictureBox
 End Class

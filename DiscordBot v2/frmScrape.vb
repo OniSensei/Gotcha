@@ -1,8 +1,5 @@
 ﻿Public Class frmScrape
     Private Async Sub frmScrape_LoadAsync(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Load discord
-        Await MainAsync()
-
         Me.KeyPreview = True
         XylosTabControl1.SelectedTab = XylosTabControl1.TabPages(1)
 
@@ -22,7 +19,9 @@
     End Sub
 
     Private Async Sub XylosButton1_ClickAsync(sender As Object, e As EventArgs) Handles XylosButton1.Click
-        RunBG(0)
+        ' Load discord
+        Await MainAsync()
+        'RunBG(0)
     End Sub
 
     Private Sub XylosButton2_Click(sender As Object, e As EventArgs) Handles XylosButton2.Click

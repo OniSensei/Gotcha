@@ -29,6 +29,9 @@ Module DiscordScrape
     End Function
 
     Private Function LogAsync(ByVal log As LogMessage) As Task
+        If log.ToString.Contains("Ready") Then
+            RunBG(val)
+        End If
         Return Task.CompletedTask
     End Function
 
