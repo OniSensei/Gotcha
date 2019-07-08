@@ -128,7 +128,7 @@ _You will have to play with the window size of the discord app, you want it big 
    9. Download lightshot (or other desktop screenshot software)
       - [lightshot](https://app.prntscr.com/en/index.html)
    
-   10. Screen shot 3 things in discord 50x50 pixel image
+   10. Screen shot 3 things in discord 50x50 pixel image and save them in the bots main folder. (not the /img/ folder)
        - A level up
        
        ![Level Up](https://i.imgur.com/93Vzv1X.png)
