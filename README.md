@@ -1,7 +1,7 @@
 # Gotcha
 ### Auto spammer / catcher for discord bot pokecord
 
-## Please check the (FAQ)[https://github.com/Zydratex/Gotcha/wiki/F.A.Q] before posing an issue.
+## Please check the [FAQ](https://github.com/Zydratex/Gotcha/wiki/F.A.Q) before posing an issue.
 
 This is a VB.NET application to automate catching / leveling pokemon in Pokecord the discord bot. This will also send email notifications if selected for the following:
 * Legendary
