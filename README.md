@@ -183,7 +183,9 @@ _You will have to play with the window size of the discord app, you want it big 
     
    11. Select 'general' channel in discord
    
-   12. Press 'Start' button on 'Home' tab
+   12. Close gotcha bot and re-open it
+   
+   13. Press 'Start' button on 'Home' tab
    
    
    ### Important notes; Please use discord on your primary monitor if you use more than one monitor. If this bot stops tracking levels or evolutions or encounters then you will need new screen shots. To test your pokemon screen shots use the 'Image tester' in advanced settings. ###
