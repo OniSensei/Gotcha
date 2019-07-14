@@ -101,9 +101,10 @@ _You will have to play with the window size of the discord app, you want it big 
        - Send message > p!market view idOfPokemonAbove
        - Click the Gotcha image scraper form from before.
        - Make sure discord and the bulbasaur from before is still visible
-        - Hover the mouse in the center of the ear on the left side of the image of bulbasaur
+        - Hover the mouse on bulbasaurs forehead
+          - Keep in mind that this will be the top left corner of our 50x50 pixel image we are scraping
          
-         ![Bulbasaur Ear Example](https://i.imgur.com/x0rbZb5.png)
+         ![Bulbasaur Ear Example](https://imgur.com/PFtHUnj.png)
          
          - Press F5 with your mouse still in position. This will update the x and y coordinates in the textboxes on the image scraper form
      - Click 'Invite Bot' button
