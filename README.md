@@ -151,7 +151,7 @@ _You will have to play with the window size of the discord app, you want it big 
                                 
          - Select the server you want to invite the bot to and click 'Authorize'
      
-         ![Authorize Bot](https://i.imgur.com/93SyOrn.png)
+         ![Authorize Bot](https://imgur.com/rFa3MHP.png)
      
    8. Click start on the image scraper
       - This will start the image scraper in the 'store' channel. This is a long process, just wait for it to finish.
