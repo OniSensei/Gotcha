@@ -1,6 +1,8 @@
 # Gotcha
 ### Auto spammer / catcher for discord bot pokecord
 
+## Please check the [FAQ](https://github.com/Zydratex/Gotcha/wiki/F.A.Q) before posing an issue.
+
 This is a VB.NET application to automate catching / leveling pokemon in Pokecord the discord bot. This will also send email notifications if selected for the following:
 * Legendary
 * Mythic
@@ -33,7 +35,7 @@ This bot also has quick commands for pokecord to simplify the need for typing. e
  The bot also saves your output logs to /logs/ so you can quick search if you need to. 
  
 ## Download Latest version of Gotcha!
->  [v1.0.0.12](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.12)
+>  [v1.0.0.13](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.13)
 
 _Please keep in mind if you use multiple monitors, this only scans your *primary monitor*_
 _You will have to play with the window size of the discord app, you want it big enough for the bot to try more than once if there is no catch, but enough to bump the pokemon off the screen if there is a catch, but not a level. It's tricky but doable, somewhere near 1117 x 647 on my monitor._
@@ -42,7 +44,7 @@ _You will have to play with the window size of the discord app, you want it big 
 
 ## Step by Step ##
 1. Download
-   - >  [v1.0.0.12](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.12)
+   - >  [v1.0.0.13](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.13)
    - >  [Discord](https://discordapp.com/download)
  
 2. Extract bot zip to folder
@@ -92,7 +94,7 @@ _You will have to play with the window size of the discord app, you want it big 
   7. Click 'Image Scrape' button    
      - Click 'Image Scrape' tab
      
-     ![Image Scrape Tab](https://i.imgur.com/65DsTLl.png)
+     ![Image Scrape Tab](https://imgur.com/AWC8QH8.png)
      
      - Select the 'store' channel in discord
        - Send message > p!market search --name bulbasaur
@@ -106,12 +108,50 @@ _You will have to play with the window size of the discord app, you want it big 
          - Press F5 with your mouse still in position. This will update the x and y coordinates in the textboxes on the image scraper form
      - Click 'Invite Bot' button
      
-     ![Invite Bot](https://i.imgur.com/JyVjpDZ.png)
+       ![Invite Bot](https://i.imgur.com/JyVjpDZ.png)
+       
+       - This will open a link to [https://discordapp.com/developers/applications/](https://discordapp.com/developers/applications/) You will need to create a bot and invite it to your server as follows
+         - Click the 'New Application' button
+         
+         ![New Application](https://i.imgur.com/2OQwdyk.png)
+         
+         - Enter a name for this bot and click create
+         
+         ![Name Bot](https://imgur.com/wdj544W.png)
+         
+         - Click the 'Bot' tab under settings on the right toolbar
+         
+         ![Bot Tab](https://imgur.com/1UCYlma.png)
+         
+         - Click the 'Add Bot' button
+         
+         ![Add Bot](https://imgur.com/8AlIHjo.png)
+         
+         - Click 'Yes do it' in the pop-up
+         
+         ![Yes do it](https://imgur.com/HWg5AZ8.png)
+         
+         - Click 'Copy' button located under the token
+         
+         ![Copy Token](https://imgur.com/ImHZxNG.png)
+         
+         - Paste copied token into bot scrape window
+         
+         ![Token](https://imgur.com/Z0DQT41.png)
+         
+         - Go back to the Discord Developer Portal and select 'OAuth2' tab under settings on the right toolbar
+         
+         ![OAuth2](https://imgur.com/z24sHdA.png)
+         
+         - Select 'Bot' checkbox from the scopes list and copy the link
+         
+         ![Bot OAuth2](https://imgur.com/yhEg5iw.png)
+         
+         - Paste the copied link into a new tab / new window
+                                
+         - Select the server you want to invite the bot to and click 'Authorize'
      
-       - This will invite the gotcha image scraper bot to your server.
-     - Select the server you want to invite the bot to and click 'Authorize'
-     
-     ![Authorize Bot](https://i.imgur.com/93SyOrn.png)
+         ![Authorize Bot](https://i.imgur.com/93SyOrn.png)
      
    8. Click start on the image scraper
       - This will start the image scraper in the 'store' channel. This is a long process, just wait for it to finish.
@@ -128,7 +168,7 @@ _You will have to play with the window size of the discord app, you want it big 
    9. Download lightshot (or other desktop screenshot software)
       - [lightshot](https://app.prntscr.com/en/index.html)
    
-   10. Screen shot 3 things in discord 50x50 pixel image
+   10. Screen shot 3 things in discord 50x50 pixel image and save them in the bots main folder. (not the /img/ folder)
        - A level up
        
        ![Level Up](https://i.imgur.com/93Vzv1X.png)
@@ -143,7 +183,9 @@ _You will have to play with the window size of the discord app, you want it big 
     
    11. Select 'general' channel in discord
    
-   12. Press 'Start' button on 'Home' tab
+   12. Close gotcha bot and re-open it
+   
+   13. Press 'Start' button on 'Home' tab
    
    
    ### Important notes; Please use discord on your primary monitor if you use more than one monitor. If this bot stops tracking levels or evolutions or encounters then you will need new screen shots. To test your pokemon screen shots use the 'Image tester' in advanced settings. ###
