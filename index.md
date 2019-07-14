@@ -35,7 +35,7 @@ This bot also has quick commands for pokecord to simplify the need for typing. e
  The bot also saves your output logs to /logs/ so you can quick search if you need to. 
  
 ## Download Latest version of Gotcha!
->  [v1.0.0.12](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.12)
+>  [v1.0.0.13](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.13)
 
 _Please keep in mind if you use multiple monitors, this only scans your *primary monitor*_
 _You will have to play with the window size of the discord app, you want it big enough for the bot to try more than once if there is no catch, but enough to bump the pokemon off the screen if there is a catch, but not a level. It's tricky but doable, somewhere near 1117 x 647 on my monitor._
@@ -44,7 +44,7 @@ _You will have to play with the window size of the discord app, you want it big 
 
 ## Step by Step ##
 1. Download
-   - >  [v1.0.0.12](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.12)
+   - >  [v1.0.0.13](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.13)
    - >  [Discord](https://discordapp.com/download)
  
 2. Extract bot zip to folder
