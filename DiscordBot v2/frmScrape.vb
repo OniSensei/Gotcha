@@ -29,8 +29,4 @@
     Private Sub XylosButton2_Click(sender As Object, e As EventArgs) Handles XylosButton2.Click
         Process.Start("https://discordapp.com/developers/applications")
     End Sub
-
-    Private Sub frmScrape_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        DiscordScrape.DisposeScrape()
-    End Sub
 End Class

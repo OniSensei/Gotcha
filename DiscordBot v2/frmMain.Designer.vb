@@ -32,17 +32,6 @@ Partial Class frmMain
         Me.chatSpammer = New System.ComponentModel.BackgroundWorker()
         Me.mainTab = New Gotcha.XylosTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.pkmnPreview = New System.Windows.Forms.PictureBox()
         Me.lstOutput = New System.Windows.Forms.ListView()
@@ -189,21 +178,21 @@ Partial Class frmMain
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage10 = New System.Windows.Forms.TabPage()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.XylosSeparator15 = New Gotcha.XylosSeparator()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.lblGithub = New System.Windows.Forms.LinkLabel()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.mainTab.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.pkmnPreview, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage6.SuspendLayout()
@@ -213,8 +202,10 @@ Partial Class frmMain
         Me.TabPage5.SuspendLayout()
         Me.TabPage8.SuspendLayout()
         Me.TabPage10.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'statsTimer
@@ -267,17 +258,6 @@ Partial Class frmMain
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.White
-        Me.TabPage1.Controls.Add(Me.Label44)
-        Me.TabPage1.Controls.Add(Me.PictureBox5)
-        Me.TabPage1.Controls.Add(Me.LinkLabel3)
-        Me.TabPage1.Controls.Add(Me.Label43)
-        Me.TabPage1.Controls.Add(Me.Label42)
-        Me.TabPage1.Controls.Add(Me.LinkLabel2)
-        Me.TabPage1.Controls.Add(Me.Label41)
-        Me.TabPage1.Controls.Add(Me.Label40)
-        Me.TabPage1.Controls.Add(Me.Label39)
-        Me.TabPage1.Controls.Add(Me.PictureBox2)
-        Me.TabPage1.Controls.Add(Me.PictureBox1)
         Me.TabPage1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TabPage1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
@@ -287,111 +267,6 @@ Partial Class frmMain
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Tag = "dashboard"
         Me.TabPage1.Text = "Dashboard"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(283, 79)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(79, 15)
-        Me.Label44.TabIndex = 10
-        Me.Label44.Text = "DefaulT#2648"
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(261, 78)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 9
-        Me.PictureBox5.TabStop = False
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(298, 291)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(43, 15)
-        Me.LinkLabel3.TabIndex = 8
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Github"
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(3, 126)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(596, 180)
-        Me.Label43.TabIndex = 7
-        Me.Label43.Text = resources.GetString("Label43.Text")
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(3, 111)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(70, 15)
-        Me.Label42.TabIndex = 6
-        Me.Label42.Text = "Description:"
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(316, 60)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(70, 15)
-        Me.LinkLabel2.TabIndex = 5
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Github.com"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(258, 60)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(52, 15)
-        Me.Label41.TabIndex = 4
-        Me.Label41.Text = "Website:"
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(258, 45)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(87, 15)
-        Me.Label40.TabIndex = 3
-        Me.Label40.Text = "Version 1.0.0.12"
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(254, 8)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(323, 37)
-        Me.Label39.TabIndex = 2
-        Me.Label39.Text = "Gotcha! A Pokecord Bot"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(112, 8)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(136, 100)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 8)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'TabPage2
         '
@@ -1980,16 +1855,20 @@ Partial Class frmMain
         'TabPage10
         '
         Me.TabPage10.BackColor = System.Drawing.Color.White
-        Me.TabPage10.Controls.Add(Me.LinkLabel1)
-        Me.TabPage10.Controls.Add(Me.Label38)
-        Me.TabPage10.Controls.Add(Me.XylosSeparator15)
-        Me.TabPage10.Controls.Add(Me.Label37)
-        Me.TabPage10.Controls.Add(Me.lblGithub)
-        Me.TabPage10.Controls.Add(Me.Label35)
-        Me.TabPage10.Controls.Add(Me.Label36)
-        Me.TabPage10.Controls.Add(Me.Label34)
-        Me.TabPage10.Controls.Add(Me.PictureBox4)
-        Me.TabPage10.Controls.Add(Me.PictureBox3)
+        Me.TabPage10.Controls.Add(Me.Label45)
+        Me.TabPage10.Controls.Add(Me.PictureBox6)
+        Me.TabPage10.Controls.Add(Me.LinkLabel4)
+        Me.TabPage10.Controls.Add(Me.Label44)
+        Me.TabPage10.Controls.Add(Me.PictureBox5)
+        Me.TabPage10.Controls.Add(Me.LinkLabel3)
+        Me.TabPage10.Controls.Add(Me.Label43)
+        Me.TabPage10.Controls.Add(Me.Label42)
+        Me.TabPage10.Controls.Add(Me.LinkLabel2)
+        Me.TabPage10.Controls.Add(Me.Label41)
+        Me.TabPage10.Controls.Add(Me.Label40)
+        Me.TabPage10.Controls.Add(Me.Label39)
+        Me.TabPage10.Controls.Add(Me.PictureBox2)
+        Me.TabPage10.Controls.Add(Me.PictureBox1)
         Me.TabPage10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TabPage10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(124, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(142, Byte), Integer))
         Me.TabPage10.Location = New System.Drawing.Point(184, 4)
@@ -1998,100 +1877,139 @@ Partial Class frmMain
         Me.TabPage10.TabIndex = 10
         Me.TabPage10.Text = "About"
         '
-        'LinkLabel1
+        'Label45
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(298, 293)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(45, 15)
-        Me.LinkLabel1.TabIndex = 10
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "github."
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(187, 394)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(98, 15)
+        Me.Label45.TabIndex = 27
+        Me.Label45.Text = "- Join the discord"
         '
-        'Label38
+        'PictureBox6
         '
-        Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(3, 129)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(595, 180)
-        Me.Label38.TabIndex = 9
-        Me.Label38.Text = resources.GetString("Label38.Text")
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(3, 393)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 26
+        Me.PictureBox6.TabStop = False
         '
-        'XylosSeparator15
+        'LinkLabel4
         '
-        Me.XylosSeparator15.Location = New System.Drawing.Point(3, 109)
-        Me.XylosSeparator15.Name = "XylosSeparator15"
-        Me.XylosSeparator15.Size = New System.Drawing.Size(588, 2)
-        Me.XylosSeparator15.TabIndex = 8
-        Me.XylosSeparator15.Text = "XylosSeparator15"
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.Location = New System.Drawing.Point(25, 394)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(156, 15)
+        Me.LinkLabel4.TabIndex = 25
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "https://discord.gg/6ByeEMy"
         '
-        'Label37
+        'Label44
         '
-        Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(3, 114)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(70, 15)
-        Me.Label37.TabIndex = 7
-        Me.Label37.Text = "Description:"
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(25, 375)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(79, 15)
+        Me.Label44.TabIndex = 24
+        Me.Label44.Text = "DefaulT#2648"
         '
-        'lblGithub
+        'PictureBox5
         '
-        Me.lblGithub.AutoSize = True
-        Me.lblGithub.Location = New System.Drawing.Point(314, 57)
-        Me.lblGithub.Name = "lblGithub"
-        Me.lblGithub.Size = New System.Drawing.Size(202, 15)
-        Me.lblGithub.TabIndex = 6
-        Me.lblGithub.TabStop = True
-        Me.lblGithub.Text = "https://github.com/Zydratex/Gotcha"
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(3, 374)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 23
+        Me.PictureBox5.TabStop = False
         '
-        'Label35
+        'LinkLabel3
         '
-        Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(262, 57)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(46, 15)
-        Me.Label35.TabIndex = 5
-        Me.Label35.Text = "Github:"
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Location = New System.Drawing.Point(295, 286)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(43, 15)
+        Me.LinkLabel3.TabIndex = 22
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Github"
         '
-        'Label36
+        'Label43
         '
-        Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(262, 42)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(84, 15)
-        Me.Label36.TabIndex = 4
-        Me.Label36.Text = "Version: 1.0.0.0"
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(0, 121)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(596, 180)
+        Me.Label43.TabIndex = 21
+        Me.Label43.Text = resources.GetString("Label43.Text")
         '
-        'Label34
+        'Label42
         '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(258, 5)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(323, 37)
-        Me.Label34.TabIndex = 2
-        Me.Label34.Text = "Gotcha! A Pokecord Bot"
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(0, 106)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(70, 15)
+        Me.Label42.TabIndex = 20
+        Me.Label42.Text = "Description:"
         '
-        'PictureBox4
+        'LinkLabel2
         '
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(109, 3)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(143, 100)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 1
-        Me.PictureBox4.TabStop = False
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(313, 55)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(70, 15)
+        Me.LinkLabel2.TabIndex = 19
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Github.com"
         '
-        'PictureBox3
+        'Label41
         '
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 100)
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(255, 55)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(52, 15)
+        Me.Label41.TabIndex = 18
+        Me.Label41.Text = "Website:"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(255, 40)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(87, 15)
+        Me.Label40.TabIndex = 17
+        Me.Label40.Text = "Version 1.0.0.13"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(251, 3)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(323, 37)
+        Me.Label39.TabIndex = 16
+        Me.Label39.Text = "Gotcha! A Pokecord Bot"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(109, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(136, 100)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 15
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.TabIndex = 14
+        Me.PictureBox1.TabStop = False
         '
         'frmMain
         '
@@ -2106,11 +2024,6 @@ Partial Class frmMain
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Gotcha!"
         Me.mainTab.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.pkmnPreview, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2126,8 +2039,10 @@ Partial Class frmMain
         Me.TabPage8.ResumeLayout(False)
         Me.TabPage10.ResumeLayout(False)
         Me.TabPage10.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2283,28 +2198,21 @@ Partial Class frmMain
     Friend WithEvents Label33 As Label
     Friend WithEvents lblMythicRate As Label
     Friend WithEvents Label32 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TabPage10 As TabPage
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents lblGithub As LinkLabel
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Label38 As Label
-    Friend WithEvents XylosSeparator15 As XylosSeparator
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label39 As Label
+    Friend WithEvents XylosButton1 As XylosButton
+    Friend WithEvents btnScrape As XylosButton
+    Friend WithEvents Label45 As Label
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents Label44 As Label
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Label42 As Label
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents Label41 As Label
     Friend WithEvents Label40 As Label
-    Friend WithEvents Label43 As Label
-    Friend WithEvents Label42 As Label
-    Friend WithEvents LinkLabel3 As LinkLabel
-    Friend WithEvents XylosButton1 As XylosButton
-    Friend WithEvents btnScrape As XylosButton
-    Friend WithEvents Label44 As Label
-    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label39 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

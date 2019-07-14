@@ -825,14 +825,19 @@ Public Class frmMain
             If pkmnNew = "nidoran" Then pkmnNew = "nidoran-f"
             If pkmnNew = "nidoran_m" Then pkmnNew = "nidoran-m"
 
-            Dim url As String = "https://img.pokemondb.net/sprites/sun-moon/icon/" & pkmnNew.ToLower & ".png"
-            Dim tClient As WebClient = New WebClient
-
             If pkmnNew.Contains("alolan") Then
                 pkmnPreview.BackgroundImage = My.Resources.Spr_3r_000
             Else
-                Dim tImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url)))
-                pkmnPreview.BackgroundImage = tImage
+                If File.Exists(imgPath & "\cache\icon\" & pkmnNew.ToLower & ".gif") Then
+                    pkmnPreview.BackgroundImage = Image.FromFile(imgPath & "\cache\icon\" & pkmnNew.ToLower & ".gif")
+                Else
+                    Dim url As String = "https://img.pokemondb.net/sprites/sun-moon/icon/" & pkmnNew.ToLower & ".png"
+                    Dim tClient As WebClient = New WebClient
+                    Dim timage As Bitmap = Bitmap.FromStream(New IO.MemoryStream(tclient.DownloadData(url)))
+
+                    timage.Save(imgPath & "\cache\icon\" & pkmnNew.ToLower & ".gif")
+                    pkmnPreview.BackgroundImage = Image.FromFile(imgPath & "\cache\icon\" & pkmnNew.ToLower & ".gif")
+                End If
             End If
 
             ' Log
@@ -1015,13 +1020,28 @@ Public Class frmMain
     End Sub
 
     ' Github
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+    Private Sub LinkLabel2_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
         Process.Start("https://zydratex.github.io/Gotcha/")
     End Sub
 
     ' Github issues
-    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+    Private Sub LinkLabel3_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         Process.Start("https://github.com/Zydratex/Gotcha/issues")
+    End Sub
+
+    ' Discord invite
+    Private Sub LinkLabel4_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Process.Start("https://discord.gg/6ByeEMy")
+    End Sub
+
+    ' Image tester
+    Private Sub XylosButton1_Click(sender As Object, e As EventArgs) Handles XylosButton1.Click
+        frmTester.Show()
+    End Sub
+
+    ' Image scraper
+    Private Async Sub btnScrape_ClickAsync(sender As Object, e As EventArgs) Handles btnScrape.Click
+        frmScrape.Show()
     End Sub
 
 
@@ -1141,15 +1161,5 @@ Public Class frmMain
         FindDiscord(channel2)
         SendKeys.SendWait("p!pokedex claim all")
         SendKeys.SendWait("{Enter}")
-    End Sub
-
-    ' Image tester
-    Private Sub XylosButton1_Click(sender As Object, e As EventArgs) Handles XylosButton1.Click
-        frmTester.Show()
-    End Sub
-
-    ' Image scraper
-    Private Async Sub btnScrape_ClickAsync(sender As Object, e As EventArgs) Handles btnScrape.Click
-        frmScrape.Show()
     End Sub
 End Class
