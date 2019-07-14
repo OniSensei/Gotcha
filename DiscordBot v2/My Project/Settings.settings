@@ -62,5 +62,8 @@
     <Setting Name="scrapey" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="token" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NTk5ODE5NjQ2NTI2NDIzMDQw.XSqwOg.fXE1PlOuGaUYsw68D84lwqotb7I</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

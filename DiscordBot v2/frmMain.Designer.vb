@@ -32,6 +32,8 @@ Partial Class frmMain
         Me.chatSpammer = New System.ComponentModel.BackgroundWorker()
         Me.mainTab = New Gotcha.XylosTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
@@ -197,10 +199,9 @@ Partial Class frmMain
         Me.Label34 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Label44 = New System.Windows.Forms.Label()
         Me.mainTab.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
@@ -214,7 +215,6 @@ Partial Class frmMain
         Me.TabPage10.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'statsTimer
@@ -288,6 +288,25 @@ Partial Class frmMain
         Me.TabPage1.Tag = "dashboard"
         Me.TabPage1.Text = "Dashboard"
         '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(283, 79)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(79, 15)
+        Me.Label44.TabIndex = 10
+        Me.Label44.Text = "DefaulT#2648"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(261, 78)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 9
+        Me.PictureBox5.TabStop = False
+        '
         'LinkLabel3
         '
         Me.LinkLabel3.AutoSize = True
@@ -340,9 +359,9 @@ Partial Class frmMain
         Me.Label40.AutoSize = True
         Me.Label40.Location = New System.Drawing.Point(258, 45)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(81, 15)
+        Me.Label40.Size = New System.Drawing.Size(87, 15)
         Me.Label40.TabIndex = 3
-        Me.Label40.Text = "Version 1.0.0.9"
+        Me.Label40.Text = "Version 1.0.0.12"
         '
         'Label39
         '
@@ -2074,25 +2093,6 @@ Partial Class frmMain
         Me.PictureBox3.TabIndex = 0
         Me.PictureBox3.TabStop = False
         '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(261, 78)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 9
-        Me.PictureBox5.TabStop = False
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(283, 79)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(79, 15)
-        Me.Label44.TabIndex = 10
-        Me.Label44.Text = "DefaulT#2648"
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2108,6 +2108,7 @@ Partial Class frmMain
         Me.mainTab.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
@@ -2127,7 +2128,6 @@ Partial Class frmMain
         Me.TabPage10.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -293,6 +293,18 @@ Namespace My
                 Me("scrapey") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("NTk5ODE5NjQ2NTI2NDIzMDQw.XSqwOg.fXE1PlOuGaUYsw68D84lwqotb7I")>  _
+        Public Property token() As String
+            Get
+                Return CType(Me("token"),String)
+            End Get
+            Set
+                Me("token") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

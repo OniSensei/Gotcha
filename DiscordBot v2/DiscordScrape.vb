@@ -23,7 +23,7 @@ Module DiscordScrape
     <STAThread()>
     Public Async Function MainAsync() As Task
         Threading.Thread.CurrentThread.SetApartmentState(Threading.ApartmentState.STA)
-        Await _client.LoginAsync(TokenType.Bot, "NTk3MjY3MjU5MjUzMTk0Nzkz.XSFmiw.YUgDgfYIZadpG_LtSO8y2G1RWmU")
+        Await _client.LoginAsync(TokenType.Bot, My.Settings.token)
         Await _client.StartAsync
         Await Task.Delay(-1)
     End Function
@@ -86,7 +86,7 @@ Module DiscordScrape
                     FindDiscord()
                     SendKeys.SendWait("p!market search --name " & pokeTemp)
                     SendKeys.SendWait("{Enter}")
-                    frmScrape.lblCurrentPkmn.Text = pokeTemp
+                    frmScrape.lblCurrentPokemon.Text = pokeTemp
                     idx += 1
                     val = idx
                 End If
@@ -167,19 +167,7 @@ Module DiscordScrape
 
             Dim dPoint As New Point(newx, newy)
 
-            If pokeName = "Dratini" Then
-                graphic.CopyFromScreen(New Point(dPoint.X + 90, dPoint.Y - 50), New Point(0, 0), screenSize)
-            ElseIf pokeName = "Serperior" Then
-                graphic.CopyFromScreen(New Point(dPoint.X - 120, dPoint.Y + 70), New Point(0, 0), screenSize)
-            ElseIf pokeName = "Servine" Then
-                graphic.CopyFromScreen(New Point(dPoint.X + 85, dPoint.Y + 120), New Point(0, 0), screenSize)
-            ElseIf pokeName = "Mewtwo" Then
-                graphic.CopyFromScreen(New Point(dPoint.X + 60, dPoint.Y + 70), New Point(0, 0), screenSize)
-            ElseIf pokeName = "Skorupi" Then
-                graphic.CopyFromScreen(New Point(dPoint.X - 55, dPoint.Y + 90), New Point(0, 0), screenSize)
-            Else
-                graphic.CopyFromScreen(dPoint, New Point(0, 0), screenSize)
-            End If
+            graphic.CopyFromScreen(dPoint, New Point(0, 0), screenSize)
 
             If My.Computer.FileSystem.FileExists(path & pokeName & ".png") = False Then
                 screenGrab.Save(path & pokeName & ".png")
@@ -193,5 +181,9 @@ Module DiscordScrape
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
+    End Function
+
+    Public Function DisposeScrape()
+        _client.Dispose()
     End Function
 End Module

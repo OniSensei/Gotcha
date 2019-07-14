@@ -2,7 +2,6 @@
 Imports System.IO
 Imports System.Net
 Imports System.Net.Mail
-
 '  __  __       _       
 ' |  \/  |     (_)      
 ' | \  / | __ _ _ _ __  
@@ -20,7 +19,7 @@ Public Class frmMain
     Dim lc As Integer = 0
     Dim ec As Integer = 0
     Public levelSeen As Boolean = False
-    Dim evoSeen As Boolean = False
+    Public evoSeen As Boolean = False
     Dim caught As Boolean = False
     Public startTime As Date
     Dim endTime As Date
@@ -48,12 +47,14 @@ Public Class frmMain
     End Sub
 
     ' Form load
-    Private Async Sub frmMain_LoadAsync(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmMain_LoadAsync(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load pokemon
         If File.Exists(path & "\pkmn.txt") Then
             Dim pokes() As String = File.ReadAllLines(path & "\pkmn.txt")
-            lstPkmn.Items.Clear()
-            lstPkmn.Items.AddRange(pokes)
+            ' If lstPkmn.Items.Count <> 0 Then
+            'lstPkmn.Items.Clear()
+            'lstPkmn.Items.AddRange(pokes)
+            'End If
         End If
 
         ' Set combo  boxes
@@ -347,7 +348,7 @@ Public Class frmMain
     End Function
 
     ' Start bot
-    Private Sub btnStartBot_Click(sender As Object, e As EventArgs) Handles btnStartBot.Click
+    Private Async Sub btnStartBot_ClickAsync(sender As Object, e As EventArgs) Handles btnStartBot.Click
         Try
             botRunning = True
             StopWatch.Start()
@@ -878,7 +879,7 @@ Public Class frmMain
         Try
             Dim SmtpServer As New SmtpClient
             Dim mail As New MailMessage
-            SmtpServer.Credentials = New Net.NetworkCredential(My.Settings.email & My.Settings.provider, My.Settings.pass)
+            SmtpServer.Credentials = New System.Net.NetworkCredential(My.Settings.email & My.Settings.provider, My.Settings.pass)
             SmtpServer.Port = My.Settings.port
             SmtpServer.Host = My.Settings.smtp
             SmtpServer.EnableSsl = True
@@ -1147,6 +1148,7 @@ Public Class frmMain
         frmTester.Show()
     End Sub
 
+    ' Image scraper
     Private Async Sub btnScrape_ClickAsync(sender As Object, e As EventArgs) Handles btnScrape.Click
         frmScrape.Show()
     End Sub

@@ -237,7 +237,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon %284%29.ico" />
     <Content Include="Gotcha.ico" />
     <None Include="Resources\iconfinder_Invisible_728947.png" />
     <None Include="Resources\iconfinder_Crown_728988.png" />

@@ -5,6 +5,8 @@
 
         txtX.Text = My.Settings.scrapex.ToString
         txtY.Text = My.Settings.scrapey.ToString
+
+        txtToken.Text = My.Settings.token.ToString
     End Sub
 
     Private Sub frmScrape_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -19,12 +21,16 @@
     End Sub
 
     Private Async Sub XylosButton1_ClickAsync(sender As Object, e As EventArgs) Handles XylosButton1.Click
-        ' Load discord
+        My.Settings.token = txtToken.Text
+        My.Settings.Save()
         Await MainAsync()
-        'RunBG(0)
     End Sub
 
     Private Sub XylosButton2_Click(sender As Object, e As EventArgs) Handles XylosButton2.Click
-        Process.Start("https://discordapp.com/api/oauth2/authorize?client_id=597267259253194793&permissions=0&scope=bot")
+        Process.Start("https://discordapp.com/developers/applications")
+    End Sub
+
+    Private Sub frmScrape_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        DiscordScrape.DisposeScrape()
     End Sub
 End Class
