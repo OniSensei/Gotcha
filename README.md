@@ -1,4 +1,8 @@
-# Gotcha
+# THIS VERSION IS NO LONGER SUPPORTED PLEASE SEE [v2.1](https://github.com/OniSensei/Gotcha-v2.1)
+
+
+
+## Gotcha
 ### Auto spammer / catcher for discord bot pokecord
 
 ## Please check the [FAQ](https://github.com/Zydratex/Gotcha/wiki/F.A.Q) before posing an issue.
@@ -44,7 +48,7 @@ _You will have to play with the window size of the discord app, you want it big 
 
 ## Step by Step ##
 1. Download
-   - >  [v1.0.0.13](https://github.com/Zydratex/Gotcha/releases/tag/1.0.0.13)
+   - >  [v1.0.0.13]()
    - >  [Discord](https://discordapp.com/download)
  
 2. Extract bot zip to folder
@@ -219,3 +223,4 @@ _You will have to play with the window size of the discord app, you want it big 
 # Gotcha! Home #
 ![Gotcha! Home](https://imgur.com/vlSQMUL.gif)
 
+~
